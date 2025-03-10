@@ -4,27 +4,11 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgh2o"]
 texture = ExtResource("1_ddnbt")
-margins = Vector2i(1, 1)
-texture_region_size = Vector2i(25, 25)
+texture_region_size = Vector2i(77, 77)
+use_texture_padding = false
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-0:2/0 = 0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-1:2/0 = 0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
-2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4706, -12.4544, 12.4646, -12.6079, 12.5792, 12.4933, -12.5219, 12.6079)
 
 [resource]
+tile_size = Vector2i(77, 77)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_rgh2o")
