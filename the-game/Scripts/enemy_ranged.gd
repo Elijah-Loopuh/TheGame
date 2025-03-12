@@ -31,6 +31,6 @@ func _physics_process(delta: float) -> void:
 	if abs(dist - TARGET) < moveThresh:
 		velocity.x = 0
 		velocity.y = 0
-
+	velocity = velocity.normalized()
 	velocity = velocity * speed
 	move_and_slide()

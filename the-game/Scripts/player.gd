@@ -3,16 +3,11 @@ extends CharacterBody2D
 var speed = 500
 
 func _physics_process(delta): # movement processing
-	velocity = Vector2()
+	var inputVector = Vector2.ZERO
+	inputVector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
+	inputVector.y = Input.get_action_strength("back") - Input.get_action_strength("forward")
+	inputVector = inputVector.normalized()
 	
-	if Input.is_action_pressed("left"):
-		velocity.x -= 1
-	if Input.is_action_pressed("right"):
-		velocity.x += 1
-	if Input.is_action_pressed("forward"):
-		velocity.y -= 1
-	if Input.is_action_pressed("back"):
-		velocity.y += 1
-		
-	velocity = velocity * speed
-	move_and_slide()
+	if inputVector:
+		velocity = inputVector * speed
+		move_and_slide()
