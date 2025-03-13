@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var damage: int = 2
 const BULLET = preload("res://Scenes/bullet.tscn")
 
 func _process(delta: float) -> void: # aim at mouse

@@ -1,0 +1,22 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dumd1kn62bpby"]
+
+[ext_resource type="Texture2D" uid="uid://cct5671fhdvoh" path="res://Images/pixil-frame-0(2).png" id="1_jvuxf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwf40"]
+resource_name = "<null>"
+texture = ExtResource("1_jvuxf")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.9318, -16.075, 16.0117, -15.989, 15.9891, 15.9604, -16.2183, 15.9604)
+0:2/size_in_atlas = Vector2i(2, 2)
+0:2/0 = 0
+2:2/size_in_atlas = Vector2i(2, 2)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.9318, -16.075, 16.0117, -15.989, 15.9891, 15.9604, -16.2183, 15.9604)
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_wwf40")

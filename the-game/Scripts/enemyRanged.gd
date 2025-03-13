@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+# movement related variables
 const TARGET: int = 300 # target distance from player
 var speed: int = 300
 var dist: float
