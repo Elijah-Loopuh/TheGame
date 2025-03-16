@@ -1,16 +1,19 @@
-extends CharacterBody2D#
+extends baseCreature
+
 
 # signals
 signal healthChanged
 
 # move related variables
-var speed = 500
+var dash_cooldown: int = 1
 
 # health related veriables
-@export var maxHealth : int = 100
-@export var currentHealth : int = 85
-var healthRegen : int = 0
 @onready var healthBar = $Healthbar
+
+func _ready():
+	maxHealth = 100
+	currHealth = maxHealth
+	speed = 500
 
 func _physics_process(delta): # movement processing
 	healthUpdateF()
@@ -25,4 +28,4 @@ func _physics_process(delta): # movement processing
 		move_and_slide()
 
 func healthUpdateF():
-	healthBar.value = currentHealth
+	healthBar.value = currHealth

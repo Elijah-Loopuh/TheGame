@@ -1,12 +1,13 @@
-extends CharacterBody2D
+extends baseCreature
 
 # movement related variables
 const TARGET: int = 300 # target distance from player
-var speed: int = 300
 var dist: float
 var moveThresh: int = 5 # distance where the enemy stops moving
 
 @onready var player = $"../Player" # declare player as a variable
+func _ready():
+	speed = 250
 
 func _physics_process(delta: float) -> void:
 	velocity = Vector2()
