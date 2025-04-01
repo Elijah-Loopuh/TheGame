@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://diploex12ctrk"]
 
 [ext_resource type="Script" uid="uid://br02y44xrii6w" path="res://Scripts/bullet.gd" id="1_xjght"]
-[ext_resource type="Script" uid="uid://bpiiuia8nk0ft" path="res://Scenes/BulletCollider.gd" id="2_oduel"]
+[ext_resource type="Script" uid="uid://b47rmaw3u2bd2" path="res://Scripts/BulletCollider.gd" id="2_oduel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xjght"]
 size = Vector2(123, 4)
@@ -23,11 +23,11 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="bulletCollider" type="Area2D" parent="."]
 script = ExtResource("2_oduel")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bulletCollider"]
 position = Vector2(117.5, 0)
 shape = SubResource("RectangleShape2D_xjght")
 
-[connection signal="collided" from="Area2D" to="." method="_on_area_2d_collided"]
+[connection signal="collided" from="bulletCollider" to="." method="_on_area_2d_collided"]

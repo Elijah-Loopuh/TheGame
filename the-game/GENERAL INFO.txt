@@ -1,0 +1,13 @@
+Collision notes:
+	
+	assign multiple layers to use one hitbox for multiple things
+	
+	layer 1 is for physics:
+		-walls
+		-locked doors
+		-anything that will collide and stop, slide, bounce off other objects
+		
+	layer 2 is for hurtboxes (the damage detectors):
+		-anything with health, such as players, enemies, bosses, etc
+		-anything that causes damage
+		

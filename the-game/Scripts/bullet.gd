@@ -7,4 +7,4 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_collided() -> void:
-	queue_free() # Replace with function body.
+	queue_free() # destroy bullet

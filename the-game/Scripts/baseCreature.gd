@@ -5,9 +5,12 @@ var maxHealth: int
 var currHealth: int
 var speed: int
 
-func applyDamage(amount):
-	if ((currHealth - amount) > 0):
-		currHealth = currHealth - amount
-	else:
-		currHealth = 0
+func changeHp(amount):
+	currHealth = currHealth + amount
+	
+	if currHealth < 1: # check for death, print a test message declaring death
+		print("TEST: A DEATH OCCURED")
 		queue_free()
+	
+	if currHealth > maxHealth: # overhealth check
+		currHealth = maxHealth
